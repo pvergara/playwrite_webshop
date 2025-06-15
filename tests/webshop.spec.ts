@@ -1,4 +1,4 @@
-import {test, expect, Page, Locator} from '@playwright/test';
+import {test, Page} from '@playwright/test';
 
 async function rejectCookieWall(page:Page) {
     await page.getByRole('button', {name: 'Manage options'}).click();
