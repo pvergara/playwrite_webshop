@@ -21,7 +21,7 @@ async function rejectCookieWall(page:Page) {
 }
 
 
-test('has title', async ({page}) => {
+test('Webshop homework', async ({page}) => {
     await page.goto('https://automationexercise.com/category_products');
 
     await rejectCookieWall(page);
@@ -37,5 +37,4 @@ test('has title', async ({page}) => {
     await expect(page.locator('#cartModal')).toBeVisible();
     await page.locator('.btn-success').click();
     await expect(page.locator('#cartModal')).not.toBeVisible();
-
 });
